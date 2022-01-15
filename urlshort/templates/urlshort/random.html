@@ -1,0 +1,22 @@
+{% extends 'urlshort/main.html' %}
+{% load static %}
+{% block title %}
+Random Short!!!
+{% endblock %}
+
+{% block content %}
+<h1>Welcome, <i>{{request.user.username}}</i></h1>
+
+<section>
+    <h3>Generate a random short URL</h3>
+	<form action="" method="POST">
+        {% csrf_token %}
+        
+        <div class="col-md-4">
+            <label for="original" class="form-label">Original URL</label>
+            {{form.original}}
+        </div>
+        <button class="btn btn-primary mt-2" type="submit">CREATE</button>
+    </form>
+</section>
+{% endblock %}

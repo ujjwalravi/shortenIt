@@ -1,0 +1,35 @@
+{% extends 'urlshort/main.html' %}
+{% load static %}
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+<h1>Welcome, <i>{{request.user.username}}</i></h1>
+<section>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th scope="col">Full URL</th>
+              <th scope="col">Short URL</th>
+              <th scope="col">Visits</th>
+              <th scope="col">Date Created</th>
+              <th scope="col">Delete</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+	       {% for t in data %}
+           <tr>
+            <td>{{t.original}}</td>
+            <td>http://127.0.0.1:8000/r/{{t.short}}</td>
+            <td>{{t.visits}}</td>
+            <td>{{t.date_created}}</td>
+            <td><a href="{% url 'delete' t.id %}" class="btn btn-danger btn-sm">Delete URL <i class="far fa-trash-alt"></i></a></td>
+            <td><a href="http://127.0.0.1:8000/r/{{t.short}}" class="btn btn-primary btn-sm" target="_blank">Visit <i class="fas fa-external-link-alt"></i></a><a href="{% url 'edit' t.id %}" class="btn btn-info btn-sm">Edit <i class="far fa-edit"></i></a></td>
+          </tr>
+          {%endfor%}
+          </tbody>
+          </table>
+</section>
+{% endblock %}

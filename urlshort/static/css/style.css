@@ -1,0 +1,119 @@
+.navbar-custom {
+	background-color: #009579;
+}
+.nav-link {
+	font-weight: bold;
+	color: #fff;
+	margin-right: 8px;
+}
+.nav-link:hover {
+	border: solid 1px #fff;
+	background-color: #fff;
+	border-radius: 5px;
+	color: #009579;
+}
+.left-margin {
+	margin-left: 10px;
+}
+.fa-bars {
+	color:#fff;
+	font-size:20px;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.logout-link {
+	border-radius: 7px;
+	background-color: #009579;
+}
+.logout-link:hover {
+	background-color: red;
+}
+.imgstyle {
+	width:  4%;
+}
+
+#clicks {
+	font-weight: bold;
+	font-size: 3em;
+	color: #009579;
+}
+
+.card {
+	border: solid 1px #009579;
+}
+.button-link {
+	text-decoration: none;
+	padding: 10px;
+	background-color: #009579;
+	border-radius: 5px;
+	color: #fff;
+}
+.button-link:hover {
+	color: #fff;
+	border: solid 1px #009595;
+}
+
+
+
+
+.soc {
+	padding: 5px;
+	margin: 3px;
+	border-radius: 10px;
+	width: 120px;
+	color:  white;
+	cursor: hand;
+}
+.soc a {
+	text-decoration: none;
+	color: inherit;
+}
+.soc a:hover, .soc a:visited, .soc a:link, .soc a:active
+{
+    text-decoration: none;
+    color: inherit;
+}
+.wa {
+background-color: #25D366;
+border: solid 1px #25D366;
+}
+.wa:hover {
+background-color: white;
+color: #25D366;
+}
+.te {
+background-color: #0088cc;
+border: solid 1px #0088cc;
+}
+.te:hover {
+background-color: white;
+color: #0088cc;
+}
+.fb {
+background-color: #4267B2;
+border: solid 1px #4267B2;
+}
+.fb:hover {
+background-color: white;
+color: #4267B2;
+}
+.tw {
+background-color: #1da1f2;
+border: solid 1px #1da1f2;
+}
+.tw:hover {
+background-color: white;
+color:  #1da1f2;
+}
+.co {
+background-color: grey;
+border: solid 1px grey;
+}
+.co:hover {
+background-color: white;
+color: grey;
+}

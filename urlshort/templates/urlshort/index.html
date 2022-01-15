@@ -1,0 +1,52 @@
+{% extends 'urlshort/main.html' %}
+{% load static %}
+{% block title %}
+ShortenIt!!!
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col d-flex justify-content-center mt-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title text-center">TOTAL HITS</h5>
+                    <p class="card-text text-center" id="clicks">{{tc}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mt-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title text-center">HIGHEST HITS</h5>
+                    <p class="card-text text-center" id="clicks">{{mc}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mt-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title text-center">NUMBER OF URLS</h5>
+                    <p class="card-text text-center" id="clicks">{{lu}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col d-flex justify-content-center">
+                <a href="{% url 'genrandom' %}" class="button-link">
+                    <p><b>Generate a random short url</b></p>
+                </a>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <a href="{% url 'gencustom' %}" class="button-link">
+                    <p><b>Generate a custom short url</b></p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+</section>
+{% endblock %}

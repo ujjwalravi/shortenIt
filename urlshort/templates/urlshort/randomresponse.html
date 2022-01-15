@@ -1,0 +1,15 @@
+{% extends 'urlshort/main.html' %}
+{% load static %}
+{% block title %}
+Random URL generated!
+{% endblock %}
+
+{% block content %}
+<section>
+    <h2>Random URL generated</h2>
+	<hr>
+    <a href="../r/{{hashed}}" id="copytxt">127.0.0.1:8000/r/{{hashed}}</a>
+    <br>
+    {% include 'urlshort/socials.html' %}        
+</section>
+{% endblock %}

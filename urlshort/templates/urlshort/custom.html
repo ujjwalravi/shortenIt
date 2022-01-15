@@ -1,0 +1,18 @@
+{% extends 'urlshort/main.html' %}
+{% load static %}
+{% block title %}
+Custom Short!!!
+{% endblock %}
+
+{% block content %}
+<h1>Welcome, <i>{{request.user.username}}</i></h1>
+<section>
+    <h3>Generate a custom short URL</h3>
+	<form action="" method="POST">
+        {% csrf_token %}
+        
+        {{form}}
+        <button class="btn btn-primary mt-2" type="submit">CREATE</button>
+    </form>
+</section>
+{% endblock %}

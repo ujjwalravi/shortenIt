@@ -1,0 +1,15 @@
+{% extends 'urlshort/main.html' %}
+{% load static %}
+{% block title %}
+Login Failed!
+{% endblock %}
+
+{% block content %}
+<h1>Login Failed</h1>
+<section>
+	<h1><b>Login Failed.</b></h1>
+    <a href="{% url 'login' %}">Relogin...</a>
+    <br>
+    <a href="{% url 'register' %}">Register...</a>
+</section>
+{% endblock %}
