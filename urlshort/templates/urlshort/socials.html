@@ -3,16 +3,16 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-sm-1 soc text-center wa">
-      <a href="whatsapp://send?text=127.0.0.1:8000/r/{{hashed}}" target="_blank"><span ><i class="fab fa-whatsapp"></i> WhatsApp</span></a>
+      <a href="whatsapp://send?text={{request.get_host}}/r/{{hashed}}" target="_blank"><span ><i class="fab fa-whatsapp"></i> WhatsApp</span></a>
     </div>
     <div class="col-sm-1 soc text-center te">
-      <a href="https://t.me/share/url?url=127.0.0.1:8000/r/{{hashed}}" target="_blank"><span ><i class="fab fa-telegram"></i> Telegram</span></a>
+      <a href="https://t.me/share/url?url={{request.get_host}}/r/{{hashed}}" target="_blank"><span ><i class="fab fa-telegram"></i> Telegram</span></a>
     </div>
     <div class="col-sm-1 soc text-center fb">
-      <a href="https://facebook.com/sharer.php?u=127.0.0.1:8000/r/{{hashed}}" target="_blank"><span ><i class="fab fa-facebook"></i> Facebook</span></a>
+      <a href="https://facebook.com/sharer.php?u={{request.get_host}}/r/{{hashed}}" target="_blank"><span ><i class="fab fa-facebook"></i> Facebook</span></a>
     </div>
     <div class="col-sm-1 soc text-center tw">
-      <a href="https://twitter.com/share?hashtags=shortenIt&text=127.0.0.1:8000/r/{{hashed}}" target="_blank"><span ><i class="fab fa-twitter"></i> Twitter</span></a>
+      <a href="https://twitter.com/share?hashtags=shortenIt&text={{request.get_host}}/r/{{hashed}}" target="_blank"><span ><i class="fab fa-twitter"></i> Twitter</span></a>
     </div>
     <div class="col-sm-1 soc text-center co" id="copyfn" onclick="copyFunction()">
       <span ><i class="fas fa-copy"></i> Copy</span>
@@ -20,3 +20,5 @@
     </div>
   </div>
 </div>
+
+
